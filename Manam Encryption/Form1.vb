@@ -58,7 +58,7 @@ Public Class Form1
         Try
 
             Using openFileDialog As OpenFileDialog = New OpenFileDialog()
-                openFileDialog.Filter = "Pars Encrypted files (*.parsencrypt)|*.parsencrypt"
+                openFileDialog.Filter = "Manam Encrypted files (*.mEncrypt)|*.mEncrypt"
                 openFileDialog.FilterIndex = 1
                 openFileDialog.RestoreDirectory = True
 
@@ -83,7 +83,7 @@ Public Class Form1
     Private Sub SaveToFile()
         Try
             Dim saveFileDialog1 As SaveFileDialog = New SaveFileDialog()
-            saveFileDialog1.Filter = "Pars Encrypted files (*.parsencrypt)|*.parsencrypt"
+            saveFileDialog1.Filter = "Manam Encrypted files (*.mEncrypt)|*.mEncrypt"
             saveFileDialog1.RestoreDirectory = True
 
             If saveFileDialog1.ShowDialog() = DialogResult.OK Then
